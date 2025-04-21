@@ -6,10 +6,11 @@ A modern weather application built with Flutter and GetX for state management, r
 
 - Real-time weather information
 - Location-based weather
+- Hour specific weather details
 - City search functionality
 - Dark/Light theme support
 - Modern UI with animations
-- Pull-to-refresh
+- Supports 3 languages (English, Francais, العربية)
 - Error handling
 
 ## Setup
@@ -19,7 +20,7 @@ A modern weather application built with Flutter and GetX for state management, r
    ```bash
    flutter pub get
    ```
-3. Create a `.env` file in the root directory and add your OpenWeatherMap API key:
+3. Create a `.env` file in the root directory and add your weatherapi API key from https://www.weatherapi.com/:
    ```
    WEATHER_API_KEY=your_api_key_here
    ```
@@ -31,44 +32,36 @@ A modern weather application built with Flutter and GetX for state management, r
 ## Dependencies
 
 - get: ^4.6.6 - State management, routing, and dependency injection
-- http: ^1.2.0 - HTTP requests
 - geolocator: ^10.1.0 - Location services
 - intl: ^0.19.0 - Date formatting
 - flutter_dotenv: ^5.1.0 - Environment variables
-- google_fonts: ^6.1.0 - Modern typography
-- shimmer: ^3.0.0 - Loading animations
-- lottie: ^2.7.0 - Weather animations
+- dio: ^5.8.0+1 - HTTP client
+- flutter_localizations: SDK - Internationalization support
+- get_storage: ^2.1.1 - Local storage
+- flutter_lints: ^5.0.0 - Code linting
 
 ## Project Structure
 
 ```
 lib/
 ├── app/
-│   ├── controllers/
-│   │   └── weather_controller.dart
-│   ├── data/
-│   │   ├── models/
-│   │   │   └── weather_model.dart
-│   │   └── services/
-│   │       └── weather_service.dart
-│   ├── routes/
-│   │   ├── app_pages.dart
-│   │   └── app_routes.dart
-│   ├── theme/
-│   │   └── app_theme.dart
-│   └── ui/
-│       ├── pages/
-│       │   ├── home_page.dart
-│       │   ├── search_page.dart
-│       │   └── settings_page.dart
-│       └── widgets/
-│           └── weather_card.dart
-└── main.dart
+│   ├── controllers/ - Business logic and state management
+│   ├── data/ - Data models and repositories
+│   ├── helpers/ - Helper functions and utilities
+│   ├── routes/ - Navigation and routing configuration
+│   ├── services/ - API and external service integrations
+│   ├── theme/ - App theming and styling
+│   ├── utils/ - Utility functions and constants
+│   └── views/ - UI components and screens
+├── generated/ - Generated localization files
+├── l10n/ - Localization configuration
+├── main.dart - Application entry point
+└── my_app.dart - Root widget configuration
 ```
 
 ## Getting an API Key
 
-1. Go to [OpenWeatherMap](https://openweathermap.org/)
+1. Go to [WeatherApi](https://www.weatherapi.com/)
 2. Sign up for a free account
 3. Get your API key from the dashboard
 4. Add it to the `.env` file
