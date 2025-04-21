@@ -2,6 +2,17 @@
 
 A modern weather application built with Flutter and GetX for state management, routing, and dependency injection.
 
+## Screenshots
+
+<div align="center">
+  <img src="assets/screenshots/Preview-1.png" width="200" alt="Home Screen"/>
+  <img src="assets/screenshots/Preview-2.png" width="200" alt="Weather Details"/>
+  <img src="assets/screenshots/Preview-3.png" width="200" alt="Search Screen"/>
+  <img src="assets/screenshots/Preview-4.png" width="200" alt="Settings"/>
+  <img src="assets/screenshots/Preview-5.png" width="200" alt="Dark Theme"/>
+  <img src="assets/screenshots/Preview-6.png" width="200" alt="Light Theme"/>
+</div>
+
 ## Features
 
 - Real-time weather information
