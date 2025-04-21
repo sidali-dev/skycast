@@ -5,6 +5,7 @@ A modern weather application built with Flutter and GetX for state management, r
 ## Screenshots
 
 <div align="center">
+  <img src="assets/screenshots/Preview.png" width="200" alt="Home Screen"/>
   <img src="assets/screenshots/Preview-1.png" width="200" alt="Home Screen"/>
   <img src="assets/screenshots/Preview-2.png" width="200" alt="Weather Details"/>
   <img src="assets/screenshots/Preview-3.png" width="200" alt="Search Screen"/>
