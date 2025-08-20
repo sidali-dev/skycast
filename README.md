@@ -1,4 +1,4 @@
-# Weather App
+# SkyCast
 
 A modern weather application built with Flutter and GetX for state management, routing, and dependency injection.
 
